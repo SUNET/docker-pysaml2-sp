@@ -7,4 +7,4 @@ cp -r ${DATA_DIR:?"Need to set DATA_DIR non-empty"}/* .
 make_metadata.py sp_conf.py > sp.xml
 
 # start the Service Provider
-exec ./sp.py sp_conf $*
+exec python3 sp.py sp_conf $*
